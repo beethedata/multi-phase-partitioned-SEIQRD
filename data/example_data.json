@@ -1,0 +1,25 @@
+{
+	"total_individuals": ,  // required
+	"fraction_medical": ,   // required
+	"fraction_essential": , // required
+	"quarantine_start": , // required
+	"quarantine_duration": , // required
+	"epidemic_evolution": , // required ground truth data a list of dictionary with optionally any of the keys
+	                        // ('susceptible', 'exposed', 'infected', 'quarantined', 'recovered', 'deceased')
+//	"initial_expected_guess": // optional default 1.
+//	"initial_infected_guess": // optional default 0.
+//	"initial_quarantined": , // optional default 0.
+//	"initial_recovered": , // optional default 0.
+//	"initial_deceased": , // optional default 0.
+//	"gamma_guess": , // optional default  1.
+//    "gamma_m_guess": , // optional default  1.
+//    "gamma_e_guess": , // optional default  1.
+//    "gamma_o_guess": , // optional default  1.
+//    "alpha_guess": , // optional default  0.5.
+//    "delta_guess": , // optional default  0.
+//    "sigma_guess": , // optional default  0.9.
+//    "r_i_guess": , // optional default  0.9.
+//    "d_i_guess": , // optional default  0.
+//    "r_q_guess": , // optional default  0.7.
+//    "d_q_guess": , // optional default  0.034.
+}
