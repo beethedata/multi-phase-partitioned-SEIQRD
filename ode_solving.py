@@ -101,6 +101,9 @@ def solve_ode(sm0: int, se0: int, so0: int, e0: int, i0: int = 0, q0: int = 0, r
         sm, se, so, e, i, q, r, d = ode_solver.y
         result_list.append(
             {
+                'susceptible_medical': sm,
+                'susceptible_essential_services': se,
+                'susceptible_others': so,
                 'susceptible': sm + se + so,
                 'exposed': e,
                 'infected': i,

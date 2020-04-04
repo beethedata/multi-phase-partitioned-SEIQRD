@@ -4,22 +4,23 @@
 	"fraction_essential": , // required
 	"quarantine_start": , // required
 	"quarantine_duration": , // required
-	"epidemic_evolution": , // required ground truth data a list of dictionary with optionally any of the keys
-	                        // ('susceptible', 'exposed', 'infected', 'quarantined', 'recovered', 'deceased')
-//	"initial_expected_guess": // optional default 1.
-//	"initial_infected_guess": // optional default 0.
-//	"initial_quarantined": , // optional default 0.
-//	"initial_recovered": , // optional default 0.
-//	"initial_deceased": , // optional default 0.
-//	"gamma_guess": , // optional default  1.
-//    "gamma_m_guess": , // optional default  1.
-//    "gamma_e_guess": , // optional default  1.
-//    "gamma_o_guess": , // optional default  1.
-//    "alpha_guess": , // optional default  0.5.
-//    "delta_guess": , // optional default  0.
-//    "sigma_guess": , // optional default  0.9.
-//    "r_i_guess": , // optional default  0.9.
-//    "d_i_guess": , // optional default  0.
-//    "r_q_guess": , // optional default  0.7.
-//    "d_q_guess": , // optional default  0.034.
+	"epidemic_evolution":  ,// required ground truth data a list of dictionary with optionally any of the keys
+	                       // ('susceptible', 'susceptible_medical', 'susceptible_essential_services',
+	                       // 'susceptible_others', 'exposed', 'infected', 'quarantined', 'recovered', 'deceased')
+//	"initial_expected_guess": 1, // optional default 1.
+//	"initial_infected_guess": 0, // optional default 0.
+//	"initial_quarantined": 0, // optional default 0.
+//	"initial_recovered": 0, // optional default 0.
+//	"initial_deceased": 0, // optional default 0.
+//	"gamma_guess": 1, // optional default  1.
+//    "gamma_m_guess": 1, // optional default  1.
+//    "gamma_e_guess": 1, // optional default  1.
+//    "gamma_o_guess": 1, // optional default  1.
+//    "alpha_guess": 0.5, // optional default  0.5.
+//    "delta_guess": 0, // optional default  0.
+//    "sigma_guess": 0.9, // optional default  0.9.
+//    "r_i_guess": 0.9, // optional default  0.9.
+//    "d_i_guess": 0, // optional default  0.
+//    "r_q_guess": 0.7, // optional default  0.7.
+//    "d_q_guess": 0.034 // optional default  0.034.
 }
