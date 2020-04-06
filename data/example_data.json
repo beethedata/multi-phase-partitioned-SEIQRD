@@ -1,9 +1,10 @@
 {
-	"total_individuals": ,  // required
-	"fraction_medical": ,   // required
-	"fraction_essential": , // required
-	"quarantine_start": , // required
-	"quarantine_duration": , // required
+	"total_individuals": ,  // required.
+	"fraction_medical": ,   // required unless standard seiqrd.
+	"fraction_essential": , // required unless standard seiqrd.
+	"quarantine_start": , // required unless standard seiqrd.
+	"quarantine_1_duration": , // required unless standard seiqrd.
+	"quarantine_2_duration": , // required unless standard seiqrd.
 	"epidemic_evolution":  ,// required ground truth data a list of dictionary with optionally any of the keys
 	                       // ('susceptible', 'susceptible_medical', 'susceptible_essential_services',
 	                       // 'susceptible_others', 'exposed', 'infected', 'quarantined', 'recovered', 'deceased')
@@ -11,15 +12,20 @@
 //	"initial_infected_guess": 0, // optional default 0.
 //	"initial_quarantined": 0, // optional default 0.
 //	"initial_recovered": 0, // optional default 0.
+//	"initial_unknown_recovered_guess": 0, // optional default 0.
 //	"initial_deceased": 0, // optional default 0.
 //	"gamma_guess": 1, // optional default  1.
-//    "gamma_m_guess": 1, // optional default  1.
-//    "gamma_e_guess": 1, // optional default  1.
-//    "gamma_o_guess": 1, // optional default  1.
+//    "m_gamma_1_guess": 1, // optional default  1.
+//    "m_gamma_2_guess": 1, // optional default  1.
+//    "e_gamma_1_guess": 1, // optional default  1.
+//    "e_gamma_2_guess": 1, // optional default  1.
+//    "o_gamma_1_guess": 1, // optional default  1.
+//    "o_gamma_2_guess": 1, // optional default  1.
 //    "alpha_guess": 0.5, // optional default  0.5.
 //    "delta_guess": 0, // optional default  0.
 //    "sigma_guess": 0.9, // optional default  0.9.
 //    "r_i_guess": 0.9, // optional default  0.9.
+//    "r_u_guess": 0.9, // optional default  0.9.
 //    "d_i_guess": 0, // optional default  0.
 //    "r_q_guess": 0.7, // optional default  0.7.
 //    "d_q_guess": 0.034 // optional default  0.034.

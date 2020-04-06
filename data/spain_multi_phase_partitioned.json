@@ -1,0 +1,291 @@
+{
+  "total_individuals": 47100396,
+  "fraction_medical": 0.012420277740340017,
+  "fraction_essential": 0.042,
+  "quarantine_start": 25,
+  "quarantine_1_duration": 14,
+  "quarantine_2_duration": 1000,
+  "epidemic_evolution":  [
+    {
+      "infected": 2,
+      "quarantined": 0,
+      "recovered": 0,
+      "deceased": 0
+    },
+    {
+      "infected": 2,
+      "quarantined": 0,
+      "recovered": 0,
+      "deceased": 0
+    },
+    {
+      "infected": 2,
+      "quarantined": 0,
+      "recovered": 0,
+      "deceased": 0
+    },
+    {
+      "infected": 2,
+      "quarantined": 0,
+      "recovered": 0,
+      "deceased": 0
+    },
+    {
+      "infected": 3,
+      "quarantined": 0,
+      "recovered": 0,
+      "deceased": 0
+    },
+    {
+      "infected": 10,
+      "quarantined": 0,
+      "recovered": 0,
+      "deceased": 0
+    },
+    {
+      "infected": 16,
+      "quarantined": 0,
+      "recovered": 0,
+      "deceased": 0
+    },
+    {
+      "infected": 29,
+      "quarantined": 0,
+      "recovered": 0,
+      "deceased": 0
+    },
+    {
+      "infected": 43,
+      "quarantined": 0,
+      "recovered": 0,
+      "deceased": 0
+    },
+    {
+      "infected": 65,
+      "quarantined": 0,
+      "recovered": 0,
+      "deceased": 0
+    },
+    {
+      "infected": 113,
+      "quarantined": 0,
+      "recovered": 0,
+      "deceased": 0
+    },
+    {
+      "infected": 148,
+      "quarantined": 0,
+      "recovered": 0,
+      "deceased": 0
+    },
+    {
+      "infected": 194,
+      "quarantined": 0,
+      "recovered": 0,
+      "deceased": 0
+    },
+    {
+      "infected": 238,
+      "quarantined": 0,
+      "recovered": 0,
+      "deceased": 0
+    },
+    {
+      "infected": 364,
+      "quarantined": 0,
+      "recovered": 0,
+      "deceased": 0
+    },
+    {
+      "infected": 386,
+      "quarantined": 0,
+      "recovered": 0,
+      "deceased": 0
+    },
+    {
+      "infected": 526,
+      "quarantined": 0,
+      "recovered": 0,
+      "deceased": 0
+    },
+    {
+      "infected": 955,
+      "quarantined": 0,
+      "recovered": 23,
+      "deceased": 28
+    },
+    {
+      "infected": 1435,
+      "quarantined": 0,
+      "recovered": 135,
+      "deceased": 36
+    },
+    {
+      "infected": 1887,
+      "quarantined": 236,
+      "recovered": 182,
+      "deceased": 48
+    },
+    {
+      "infected": 2656,
+      "quarantined": 399,
+      "recovered": 189,
+      "deceased": 84
+    },
+    {
+      "infected": 3829,
+      "quarantined": 1858,
+      "recovered": 181,
+      "deceased": 120
+    },
+    {
+      "infected": 5198,
+      "quarantined": 2120,
+      "recovered": 512,
+      "deceased": 134
+    },
+    {
+      "infected": 6896,
+      "quarantined": 3096,
+      "recovered": 517,
+      "deceased": 285
+    },
+
+
+
+
+    {
+      "infected": 8313,
+      "quarantined": 3435,
+      "recovered": 530,
+      "deceased": 306
+    },
+    {
+      "infected": 9659,
+      "quarantined": 5136,
+      "recovered": 1028,
+      "deceased": 491
+    },
+    {
+      "infected": 12037,
+      "quarantined": 5759,
+      "recovered": 1081,
+      "deceased": 598
+    },
+    {
+      "infected": 15273,
+      "quarantined": 7619,
+      "recovered": 1107,
+      "deceased": 767
+    },
+    {
+      "infected": 17453,
+      "quarantined": 10418,
+      "recovered": 1545,
+      "deceased": 982
+    },
+    {
+      "infected": 21511,
+      "quarantined": 13282,
+      "recovered": 2089,
+      "deceased": 1326
+    },
+    {
+      "infected": 24277,
+      "quarantined": 15554,
+      "recovered": 2575,
+      "deceased": 1720
+    },
+    {
+      "susceptible_medical": 579787,
+      "infected": 27525,
+      "quarantined": 18374,
+      "recovered": 3382,
+      "deceased": 2182
+    },
+    {
+      "susceptible_medical": 578502,
+      "infected": 33183,
+      "quarantined": 22762,
+      "recovered": 3794,
+      "deceased": 2696
+    },
+    {
+      "susceptible_medical": 576900,
+      "infected": 38809,
+      "quarantined": 26960,
+      "recovered": 5367,
+      "deceased": 3434
+    },
+    {
+      "susceptible_medical": 575241,
+      "infected": 45084,
+      "quarantined": 31912,
+      "recovered": 7015,
+      "deceased": 4089
+    },
+    {
+      "susceptible_medical": 573243,
+      "infected": 49844,
+      "quarantined": 36293,
+      "recovered": 9357,
+      "deceased": 4858
+    },
+    {
+      "susceptible_medical": 570834,
+      "infected": 54218,
+      "quarantined": 40630,
+      "recovered": 12285,
+      "deceased": 5745
+    },
+    {
+      "susceptible_medical": 569532,
+      "infected": 57550,
+      "quarantined": 43397,
+      "recovered": 14708,
+      "deceased": 6539
+    },
+
+
+
+
+    {
+      "susceptible_medical": 568107,
+      "infected": 61075,
+      "quarantined": 46617,
+      "recovered": 16780,
+      "deceased": 7340
+    },
+    {
+      "susceptible_medical": 566553,
+      "infected": 66969,
+      "quarantined": 49243,
+      "recovered": 19259,
+      "deceased": 8189
+    },
+    {
+      "infected": 70436,
+      "quarantined": 51418,
+      "recovered": 22647,
+      "deceased": 9053
+    },
+    {
+      "infected": 73492,
+      "quarantined": 54113,
+      "recovered": 26743,
+      "deceased": 10003
+    },
+    {
+      "infected": 76262,
+      "quarantined": 56637,
+      "recovered": 30513,
+      "deceased": 10935
+    },
+    {
+      "infected": 78773,
+      "quarantined": 57612,
+      "recovered": 34219,
+      "deceased": 11744
+    }
+  ]
+}
