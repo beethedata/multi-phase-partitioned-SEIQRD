@@ -1,4 +1,5 @@
 import json
+from typing import Optional
 
 import click
 
@@ -11,7 +12,10 @@ from visualization import show_multiple_results
               required=True)
 @click.option('--simulation-duration', prompt='Simulation duration', help='Duration of simulation.', default=100)
 @click.option('--offset', prompt='Offset from day 0', help='Offset from day 0 when showing.', default=0)
-def simulate_quarantine_end(parameters_path: str, simulation_duration: int = 100, offset: int = 0):
+@click.option('--top-lim', prompt='Maximum number of individuals showed in graphics',
+              help='Offset from day 0 when showing.', type=int, default=None)
+def simulate_quarantine_end(parameters_path: str, simulation_duration: int = 100, offset: int = 0,
+                            top_lim: Optional[int] = 300000):
     with open(parameters_path) as data_file:
         parameters = json.load(data_file)
 
@@ -48,7 +52,7 @@ def simulate_quarantine_end(parameters_path: str, simulation_duration: int = 100
         end_day = parameters["quarantine_start"] + parameters["quarantine_1_duration"] + quarantine_2_duration
         result_list.append((results, date, end_day))
 
-    show_multiple_results(result_list, title='Infected depending on quarantine end', offset=offset)
+    show_multiple_results(result_list, title='Infected depending on quarantine end', offset=offset, top_lim=top_lim)
 
 
 if __name__ == '__main__':

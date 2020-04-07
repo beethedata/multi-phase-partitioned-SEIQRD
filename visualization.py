@@ -25,10 +25,9 @@ def show_results(result_list: List[Dict[str, float]],
 def show_multiple_results(result_list: List[Tuple[List[Dict[str, float]], str, int]],
                           offset: int = 0,
                           title: str = 'Infected depending on quarantine end',
-                          start_days: int = 20):
+                          start_days: int = 20, top_lim: Optional[int] = None, logarithmic: bool = False):
     plt.clf()
     max_y = 0
-    max_lim = 300000
     for i, (results, result_name, end_day) in enumerate(result_list):
         x = [i for i in range(len(results))][offset:]
         y = []
@@ -48,9 +47,16 @@ def show_multiple_results(result_list: List[Tuple[List[Dict[str, float]], str, i
             max_y = max(max_y, val)
             y.append(val)
 
-        plt.plot(x, y, 'r', color=f'C{i}', label=f'{result_name} (day {end_day})')
+        if logarithmic:
+            plt.semilogy(x, y, 'r', color=f'C{i}', label=f'{result_name} (day {end_day})')
+        else:
+            plt.plot(x, y, 'r', color=f'C{i}', label=f'{result_name} (day {end_day})')
 
     plt.legend()
     plt.title(title)
-    plt.ylim(0, min(max_y, max_lim))
+    if top_lim is not None:
+        if logarithmic:
+            plt.ylim(1, min(max_y, top_lim))
+        else:
+            plt.ylim(0, min(max_y, top_lim))
     plt.show()
