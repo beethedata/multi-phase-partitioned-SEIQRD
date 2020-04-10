@@ -16,8 +16,9 @@ def cli():
 @click.command('fit-and-predict')
 @click.option('--train-data-path', prompt='Path to json data used for training', required=True)
 @click.option('--gt-data-path', prompt='Path to json with ground truth data', default=None)
-@click.option('--simulation-duration', default=None)
-def fit_and_predict(train_data_path: str, gt_data_path: Optional[str] = None, simulation_duration: Optional[int] = None):
+@click.option('--simulation-duration', type=int)
+def fit_and_predict(train_data_path: str, gt_data_path: Optional[str] = None,
+                    simulation_duration: Optional[int] = None):
     gt_data = None
     if gt_data_path is not None:
         with open(gt_data_path) as data_file:
@@ -36,7 +37,6 @@ def fit_and_predict(train_data_path: str, gt_data_path: Optional[str] = None, si
               i0=res_dict['infected_initial'],
               q0=res_dict['quarantined_initial'],
               r0=res_dict['recovered_initial'],
-              ur0=res_dict['unknown_recovered_initial'],
               d0=res_dict['deceased_initial'],
               quarantine_start=res_dict['quarantine_start'],
               quarantine_1_duration=res_dict['quarantine_1_duration'],
@@ -53,7 +53,6 @@ def fit_and_predict(train_data_path: str, gt_data_path: Optional[str] = None, si
               delta=res_dict['delta'],
               sigma=res_dict['sigma'],
               r_i=res_dict['r_i'],
-              r_u=res_dict['r_u'],
               r_q=res_dict['r_q'],
               d_i=res_dict['d_i'],
               d_q=res_dict['d_q'],

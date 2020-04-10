@@ -27,7 +27,6 @@ def simulate_quarantine_end(parameters_path: str, simulation_duration: int = 100
                             i0=parameters["infected_initial"],
                             q0=parameters["quarantined_initial"],
                             r0=parameters["recovered_initial"],
-                            ur0=parameters["unknown_recovered_initial"],
                             d0=parameters["deceased_initial"],
                             quarantine_start=parameters["quarantine_start"],
                             quarantine_1_duration=parameters["quarantine_1_duration"],
@@ -44,14 +43,13 @@ def simulate_quarantine_end(parameters_path: str, simulation_duration: int = 100
                             delta=parameters["delta"],
                             sigma=parameters["sigma"],
                             r_i=parameters["r_i"],
-                            r_u=parameters["r_u"],
                             r_q=parameters["r_q"],
                             d_i=parameters["d_i"],
                             d_q=parameters["d_q"])
         end_day = parameters["quarantine_start"] + parameters["quarantine_1_duration"] + quarantine_2_duration
         result_list.append((results, date, end_day))
 
-    show_multiple_results(result_list, title='Infected depending on quarantine end', offset=offset, top_lim=top_lim,
+    show_multiple_results(result_list, offset=offset, top_lim=top_lim,
                           gt_data=parameters.get('gt_data', None))
 
 
